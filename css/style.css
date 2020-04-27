@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Lato', sans-serif; }
+
+.buttons button {
+  border: 0.2rem solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 1.3rem 1.5rem;
+  border-radius: 50%;
+  outline: none; }
+  .buttons button#next {
+    position: absolute;
+    top: 40%;
+    right: 1.5rem; }
+  .buttons button#prev {
+    position: absolute;
+    top: 40%;
+    left: 1.5rem; }
+  .buttons button:hover {
+    background-color: #fff;
+    color: #333; }
+
+.underline {
+  display: inline-block;
+  position: relative; }
+  .underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.15rem;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out; }
+  .underline:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left; }
+
+.header {
+  width: 100%;
+  height: 6rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header__container {
+    border-right: 0.05rem solid #333; }
+    .header__container__logo {
+      font-size: 2.5rem;
+      color: #2471a3;
+      margin-left: 2rem;
+      padding: 0 1.5rem 0 0;
+      transition: all 0.2s ease-in-out; }
+      .header__container__logo:hover {
+        transform: scale(1.1);
+        cursor: default; }
+  .header__nav__list {
+    font-size: 1.5rem; }
+    .header__nav__list__item {
+      text-decoration: none;
+      color: #333;
+      margin-right: 3.5rem; }
+      .header__nav__list__item:hover {
+        color: #2471a3; }
+
+.showcase {
+  background-color: #000; }
+  .showcase__carousel {
+    position: relative;
+    overflow: hidden;
+    height: 55rem; }
+    .showcase__carousel__slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      font-size: 1.2rem;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out; }
+      .showcase__carousel__slide:first-child {
+        background: url("../img/San_Francisco_Img.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .showcase__carousel__slide:nth-child(2) {
+        background: url("../img/Santa_Monica_Img.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .showcase__carousel__slide:nth-child(3) {
+        background: url("../img/Los_Angeles_Img.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .showcase__carousel__slide:nth-child(4) {
+        background: url("../img/Yosemite_Img.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .showcase__carousel__slide.current {
+        opacity: 1; }
+        .showcase__carousel__slide.current .showcase__carousel__slide__content {
+          opacity: 1;
+          transform: translateX(60rem);
+          transition: all 0.7s ease-in-out 0.3s; }
+      .showcase__carousel__slide__content {
+        position: absolute;
+        bottom: 2rem;
+        left: -60rem;
+        opacity: 0;
+        width: 50rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #333;
+        padding: 3.5rem; }
+        .showcase__carousel__slide__content h1 {
+          margin-bottom: 1rem; }
