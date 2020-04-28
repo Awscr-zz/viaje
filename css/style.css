@@ -124,3 +124,40 @@ body {
         padding: 3.5rem; }
         .showcase__carousel__slide__content h1 {
           margin-bottom: 1rem; }
+
+.contact {
+  height: 100vh;
+  align-items: center;
+  text-align: center; }
+  .contact__head {
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
+    .contact__head__heading {
+      font-size: 4rem;
+      margin-bottom: 1rem; }
+    .contact__head__note {
+      font-size: 2rem; }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contact__form__item {
+      width: 25%;
+      height: 4rem;
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+      border: 0.1rem solid #333;
+      border-radius: 2rem;
+      outline: none; }
+      .contact__form__item:focus::-webkit-input-placeholder {
+        color: #2471a3; }
+    .contact__form__description {
+      height: 8rem;
+      border-radius: 1rem;
+      padding-top: 1rem;
+      resize: none; }
+    .contact__form__submit {
+      background-color: #2471a3;
+      border: 0.1rem solid #2471a3;
+      color: #fff;
+      cursor: pointer; }
