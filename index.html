@@ -18,6 +18,9 @@
 
       <nav class="header__nav">
         <div class="header__nav__list">
+          <a href="index.html" class="header__nav__list__item underline"
+            >Home</a
+          >
           <a href="#" class="header__nav__list__item underline">Your city</a>
           <a href="#" class="header__nav__list__item underline"
             >Top locations</a
@@ -68,12 +71,23 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="buttons">
-        <button id="prev"><i class="fas fa-arrow-left"></i></button>
-        <button id="next"><i class="fas fa-arrow-right"></i></button>
+        <div class="showcase__carousel__buttons">
+          <button id="prev"><i class="fas fa-arrow-left"></i></button>
+          <button id="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
       </div>
     </section>
+
+    <main class="main">
+      <form class="main__form">
+        <input
+          class="main__form__input"
+          type="text"
+          placeholder="Enter a city"
+        />
+        <input class="submit" type="submit" />
+      </form>
+    </main>
 
     <script src="app.js"></script>
   </body>
