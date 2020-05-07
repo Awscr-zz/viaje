@@ -147,9 +147,10 @@ body {
       margin-right: 1rem; }
   .cities__row {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%; }
+    grid-template-columns: 50% 50%; }
     .cities__row__card {
       width: 90%;
+      margin-bottom: 3rem;
       border: 0.1rem solid red;
       border-radius: 0.5rem;
       text-align: center;
@@ -161,14 +162,28 @@ body {
         border-top-left-radius: 0.2rem;
         border-top-right-radius: 0.2rem;
         background-size: cover; }
-      .cities__row__card__text {
-        grid-area: text;
+      .cities__row__card__content {
         padding: 1rem; }
-        .cities__row__card__text__title {
-          font-size: 3.5rem;
+        .cities__row__card__content__title {
+          font-size: 3rem;
           color: #333; }
-        .cities__row__card__text__description {
+        .cities__row__card__content__description {
           font-size: 1.4rem; }
+        .cities__row__card__content__section {
+          margin-top: 1rem;
+          text-align: left; }
+          .cities__row__card__content__section__title {
+            font-size: 2rem;
+            color: #333; }
+          .cities__row__card__content__section__place {
+            margin-top: 0.5rem;
+            font-size: 1.7rem; }
+            .cities__row__card__content__section__place__link {
+              text-decoration: none;
+              color: #2471a3; }
+            .cities__row__card__content__section__place__description {
+              padding: 1rem;
+              font-size: 1.4rem; }
       .cities__row__card:hover {
         transform: scale(1.03);
         box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.6); }
