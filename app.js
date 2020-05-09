@@ -53,9 +53,3 @@ prev.addEventListener('click', (e) => {
     slideInterval = setInterval(nextSlide, intervalTime);
   }
 });
-
-// Auto slide
-if (auto) {
-  // Run next slide at interval time
-  slideInterval = setInterval(nextSlide, intervalTime);
-}
