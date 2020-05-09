@@ -11,7 +11,9 @@ const nextSlide = () => {
   // Remove current class
   current.classList.remove('current');
   // Check for next slide
-  if (current.nextElementSibling) {
+  if (
+    current.nextElementSibling.classList.contains('showcase__carousel__slide')
+  ) {
     // Add current to next sibling
     current.nextElementSibling.classList.add('current');
   } else {
