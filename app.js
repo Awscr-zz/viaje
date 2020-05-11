@@ -1,3 +1,4 @@
+//// Carousel
 const slides = document.querySelectorAll('.showcase__carousel__slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
@@ -54,4 +55,22 @@ prev.addEventListener('click', (e) => {
     clearInterval(slideInterval);
     slideInterval = setInterval(nextSlide, intervalTime);
   }
+});
+
+//// Search Filter
+const citiesSearch = document.querySelector('.cities__form__search');
+const cityCards = document.querySelectorAll('.cities__row__card');
+
+citiesSearch.addEventListener('keyup', (e) => {
+  const term = e.target.value.toLowerCase();
+
+  Array.from(cityCards).forEach((cityCard) => {
+    const cityHeading = cityCard.childNodes[3].childNodes[1].textContent.toLowerCase();
+
+    if (cityHeading.indexOf(term) === -1) {
+      cityCard.style.display = 'none';
+    } else {
+      cityCard.style.display = 'block';
+    }
+  });
 });

@@ -142,7 +142,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 3rem; }
-    .cities__form__input {
+    .cities__form__search {
       height: 3rem;
       width: 50%;
       padding-left: 2rem;
@@ -153,7 +153,6 @@ body {
     margin-bottom: 5rem; }
     .cities__row__card {
       margin-bottom: 3rem;
-      border: 0.1rem solid red;
       border-radius: 0.5rem;
       text-align: center;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
