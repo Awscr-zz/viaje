@@ -149,15 +149,14 @@ body {
       margin-right: 1rem; }
   .cities__row {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    margin-bottom: 5rem; }
+    grid-template-columns: 33.33% 33.33% 33.33%; }
     .cities__row__card {
       margin-bottom: 3rem;
       border-radius: 0.5rem;
       text-align: center;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       width: 95%;
-      margin: 0 auto;
+      margin: 0 auto 4rem auto;
       transition: all 0.4s ease; }
       .cities__row__card:hover {
         transform: scale(1.01); }
