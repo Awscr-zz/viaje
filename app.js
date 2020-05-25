@@ -65,7 +65,7 @@ citiesSearch.addEventListener('keyup', (e) => {
   const term = e.target.value.toLowerCase();
 
   Array.from(cityCards).forEach((cityCard) => {
-    const cityHeading = cityCard.childNodes[3].childNodes[1].textContent.toLowerCase();
+    const cityHeading = cityCard.childNodes[3].childNodes[1].innerText.toLowerCase();
 
     if (cityHeading.indexOf(term) === -1) {
       cityCard.style.display = 'none';
