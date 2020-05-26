@@ -74,3 +74,23 @@ citiesSearch.addEventListener('keyup', (e) => {
     }
   });
 });
+
+//// Copyright year
+const footerDate = document.querySelector('#footer__date');
+
+window.addEventListener('load', () => {
+  const currentDate = new Date();
+
+  footerDate.innerText = currentDate.getFullYear();
+});
+
+//// Fixed Navigation Box Shadow
+const nav = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 0) {
+    nav.style.boxShadow = '0 0 5px rgba(0, 0, 0, 0.3)';
+  } else {
+    nav.style.boxShadow = 'none';
+  }
+});

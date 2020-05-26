@@ -7,7 +7,11 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
 
 .underline {
   display: inline-block;
@@ -28,19 +32,41 @@ body {
     transform-origin: bottom left; }
 
 .submit {
-  height: 3rem;
-  width: 12rem;
+  padding: 1rem 7rem;
   background-color: #fff;
   color: #000;
   border: 0.1rem solid #2471a3;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out; }
+  cursor: pointer; }
   .submit:hover {
-    transform: scale(1.1);
     color: #fff;
     background-color: #2471a3; }
 
+.footer {
+  padding: 2.5rem 4rem;
+  font-size: 1.5rem;
+  color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: auto; }
+  .footer__group {
+    display: flex;
+    flex-direction: column; }
+    .footer__group__link {
+      text-decoration: none;
+      margin-bottom: 1rem;
+      color: inherit; }
+      .footer__group__link:hover {
+        color: #2471a3; }
+  .footer__copyright {
+    color: #2471a3;
+    font-size: inherit; }
+
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
   height: 6rem;
   width: 100%;
   background-color: #fff;
@@ -168,7 +194,8 @@ body {
         background-size: cover;
         object-fit: cover; }
       .cities__row__card__content {
-        padding: 2rem; }
+        padding: 2rem;
+        position: relative; }
         .cities__row__card__content__title {
           margin-bottom: 0.5rem;
           font-size: 3rem;
@@ -190,23 +217,28 @@ body {
             .cities__row__card__content__section__place__description {
               padding: 1rem;
               font-size: 1.4rem; }
+        .cities__row__card__content__show {
+          font-size: 2rem;
+          position: absolute;
+          bottom: 0; }
 
 .contact {
-  height: 100vh;
   align-items: center;
   text-align: center; }
   .contact__head {
-    margin-top: 5rem;
-    margin-bottom: 5rem; }
+    margin-top: 5rem; }
     .contact__head__heading {
       font-size: 4rem;
+      margin-top: 6rem;
       margin-bottom: 1rem; }
     .contact__head__note {
-      font-size: 2rem; }
+      font-size: 2rem;
+      margin-bottom: 2rem; }
   .contact__form {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 3rem; }
     .contact__form__item {
       outline: none;
       font-family: inherit;
@@ -220,6 +252,6 @@ body {
         color: #2471a3; }
     .contact__form__description {
       resize: none;
-      height: 8rem;
+      height: 14rem;
       padding-top: 1rem;
       border-radius: 1rem; }
