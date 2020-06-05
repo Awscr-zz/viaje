@@ -66,7 +66,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 2;
   height: 6rem;
   width: 100%;
   background-color: #fff;
@@ -80,7 +80,11 @@ body {
       font-size: 2.5rem;
       color: #2471a3;
       margin-left: 2rem;
-      padding: 0 1.5rem 0 0; }
+      padding: 0 1.5rem 0 0;
+      cursor: default;
+      transition: all 0.2s ease; }
+      .header__container__logo:hover {
+        transform: scale(1.1); }
   .header__nav__list {
     font-size: 1.5rem; }
     .header__nav__list__item {
@@ -89,6 +93,79 @@ body {
       margin-right: 3.5rem; }
       .header__nav__list__item:hover {
         color: #2471a3; }
+
+.modal-container {
+  z-index: 10;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .modal-container.show-modal {
+    display: block; }
+
+.modal {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 40rem;
+  animation-name: modalopen;
+  animation-duration: 0.5s; }
+  .modal__close {
+    background: transparent;
+    color: #fff;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+    border: 0; }
+    .modal__close:hover {
+      cursor: pointer; }
+    .modal__close:focus {
+      outline: none; }
+  .modal__header {
+    background-color: #2471a3;
+    color: #fff;
+    padding: 2rem;
+    border-bottom: 0.1rem solid rgba(51, 51, 51, 0.5); }
+    .modal__header h3 {
+      margin: 0;
+      font-size: 2rem; }
+  .modal__content {
+    padding: 2rem;
+    font-size: 1.6rem; }
+    .modal__content__form div {
+      margin: 1.5rem; }
+    .modal__content__form label {
+      display: block;
+      margin-bottom: 0.5rem; }
+    .modal__content__form .form-input {
+      outline: none;
+      padding: 0.8rem;
+      width: 100%; }
+    .modal__content__form__sign {
+      background-color: #2471a3;
+      border: 0;
+      border-radius: 0.5rem;
+      color: #fff;
+      cursor: pointer;
+      padding: 0.8rem 1.2rem; }
+
+@keyframes modalopen {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .showcase {
   background-color: #000; }
@@ -177,6 +254,8 @@ body {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%; }
     .cities__row__card {
+      text-align: center;
+      position: relative;
       margin-bottom: 3rem;
       border-radius: 0.5rem;
       text-align: center;
@@ -201,7 +280,8 @@ body {
           font-size: 3rem;
           color: #333; }
         .cities__row__card__content__description {
-          font-size: 1.4rem; }
+          font-size: 1.4rem;
+          margin-bottom: 1.5rem; }
         .cities__row__card__content__section {
           margin-top: 1rem;
           text-align: left; }
@@ -216,14 +296,28 @@ body {
               color: #2471a3; }
             .cities__row__card__content__section__place__description {
               padding: 1rem;
-              font-size: 1.4rem; }
-        .cities__row__card__content__show {
-          font-size: 2rem;
-          position: absolute;
-          bottom: 0; }
+              font-size: 1.4rem;
+              margin-bottom: 1rem; }
+          .cities__row__card__content__section__hide {
+            display: none; }
+      .cities__row__card__show {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 1rem;
+        margin: auto;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 2rem;
+        outline: none;
+        border: none;
+        background: none;
+        color: #2471a3; }
+        .cities__row__card__show:hover {
+          color: #333; }
 
 .contact {
-  align-items: center;
   text-align: center; }
   .contact__head {
     margin-top: 5rem; }
