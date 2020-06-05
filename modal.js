@@ -1,19 +1,18 @@
 //// Modal
-const signUp = document.querySelector('#signUp');
-const signIn = document.querySelector('#signIn');
+const signUpBtn = document.querySelector('#signUp');
+const signInBtn = document.querySelector('#signIn');
 const closeBtns = document.querySelectorAll('#close');
-const modal = document.querySelector('#modal');
+const signUpModal = document.querySelector('#signUpModal');
 const signInModal = document.querySelector('#signInModal');
-console.log(document.querySelectorAll('#signUp'));
 
 // Show Sign Up Modal
-signUp.addEventListener('click', () => {
-  modal.classList.add('show-modal');
+signUpBtn.addEventListener('click', () => {
+  signUpModal.classList.add('show-modal');
 });
 
 // Hide Sign Up/ Sign In Modals
 closeBtns[0].addEventListener('click', () => {
-  modal.classList.remove('show-modal');
+  signUpModal.classList.remove('show-modal');
 });
 
 closeBtns[1].addEventListener('click', () => {
@@ -27,5 +26,8 @@ signIn.addEventListener('click', () => {
 
 // Hide modal on outside click
 window.addEventListener('click', (e) => {
-  e.target === modal ? modal.classList.remove('show-modal') : false;
+  e.target === signUpModal || signInModal
+    ? e.target.classList.remove('show-modal')
+    : false;
+  console.log(e.target);
 });
