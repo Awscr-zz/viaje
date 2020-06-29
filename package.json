@@ -1,7 +1,7 @@
 {
-  "name": "viyaje-hotel",
+  "name": "viaje",
   "version": "1.0.0",
-  "description": "Hotel website",
+  "description": "See a list of the best places you should visit in California",
   "main": "app.js",
   "scripts": {
     "watch:sass": "node-sass scss/main.scss css/style.css -w",

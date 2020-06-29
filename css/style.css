@@ -95,6 +95,10 @@ body {
       .header__nav__list__item:hover {
         color: #2471a3; }
 
+@media screen and (max-width: 520px) {
+  .header__nav__list {
+    display: none; } }
+
 .modal-container {
   z-index: 10;
   display: none;
@@ -170,10 +174,10 @@ body {
     opacity: 1; } }
 
 .showcase {
-  background-color: #000; }
+  background-color: #000;
+  overflow: hidden; }
   .showcase__carousel {
     position: relative;
-    overflow: hidden;
     height: 55rem; }
     .showcase__carousel__slide {
       position: absolute;
@@ -184,7 +188,7 @@ body {
       transition: opacity 0.4s ease-in-out; }
       .showcase__carousel__slide:first-child {
         background: url("../img/San_Francisco_Img.jpg");
-        background-size: 100%;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat; }
       .showcase__carousel__slide:nth-child(2) {
@@ -238,6 +242,24 @@ body {
       .showcase__carousel__buttons button:hover {
         background-color: #fff;
         color: #333; }
+
+@media screen and (max-width: 1400px) {
+  .showcase__carousel {
+    height: 40rem; }
+    .showcase__carousel__buttons button {
+      padding: 1rem 1.2rem; } }
+
+@media screen and (max-width: 768px) {
+  .showcase__carousel {
+    height: 30rem; }
+    .showcase__carousel__slide__content {
+      display: none; } }
+
+@media screen and (max-width: 520px) {
+  .showcase__carousel {
+    height: 20rem; }
+    .showcase__carousel__buttons button {
+      padding: 0.7rem 0.9rem; } }
 
 .cities {
   width: 100%;
@@ -318,6 +340,16 @@ body {
         color: #2471a3; }
         .cities__row__card__show:hover {
           color: #333; }
+
+@media screen and (max-width: 1400px) {
+  .cities__row {
+    grid-template-columns: 50% 50%; } }
+
+@media screen and (max-width: 768px) {
+  .cities__form__search {
+    width: 100%; }
+  .cities__row {
+    grid-template-columns: 100%; } }
 
 .contact {
   text-align: center; }
