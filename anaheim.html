@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/07e3f1840c.js"
       crossorigin="anonymous"
     ></script>
-    <title>Contact Us</title>
+    <title>Viaje</title>
   </head>
   <body>
     <header class="header">
@@ -65,46 +65,122 @@
       </div>
     </header>
 
-    <main>
-      <div class="container">
-      <div class="contact">
-      <div class="contact__head">
-        <h1 class="contact__head__heading">Get in touch</h1>
-        <p class="contact__head__note">
-          Don't see your city? Have any additional comments? Questions? Send us
-          an email!
-        </p>
-      </div>
+    <div class="container">
+      <div class="city">
+        <img class="city__img" src="img/Anaheim_Image.jpg" alt="Anaheim" />
 
-      <form class="contact__form">
-        <input
-          class="contact__form__item"
-          type="text"
-          name="firstName"
-          placeholder="First Name"
-        />
-        <input
-          class="contact__form__item"
-          type="text"
-          name="lastName"
-          placeholder="Last Name"
-        />
-        <input
-          class="contact__form__item"
-          type="email"
-          name="email"
-          placeholder="What's your email?"
-        />
-        <textarea
-          class="contact__form__item contact__form__description"
-          name="description"
-          cols="30"
-          rows="10"
-          placeholder="Description"
-        ></textarea>
-        <input class="submit" type="submit" name="submit" />
-      </form>
-    </main>
+        <div class="city__content">
+          <div class="city__content__description">
+            <h2 class="city__content__description__name">Anaheim</h2>
+            <p class="city__content__description__about">
+              As a city built on imagination, Anaheim is where every unique and
+              personal experience is sure to delight and inspire, how can you
+              miss out on the perfect experience of taking a stroll through the
+              wonderful city of Anaheim?
+            </p>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO GO
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://disneyland.disney.go.com/"
+                target="_blank"
+                >Disneyland</a
+              >
+              <p class="city__content__section__place__description">
+                Disneyland or "the happiest place on earth", is no stranger to
+                the world. With over 53 attractions, truly experience an amazing
+                time with the family and never lose that smile.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline underline"
+                href="https://disneyland.disney.go.com/destinations/disney-california-adventure/"
+                target="_blank"
+                >Disney California Adventure</a
+              >
+              <p class="city__content__section__place__description">
+                Just a 30 seconds walk from Disneyland, visit another amazing
+                Disney theme park with over 37 attractions!
+              </p>
+            </div>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO EAT
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.bubbagump.com/locations/anaheim/"
+                target="_blank"
+                >Bubba Gump Shrimp Co.</a
+              >
+              <p class="city__content__section__place__description">
+                Bubba Gump Shrimp Co. is no stranger to seafood lovers, serving
+                not only the best seafood in Anaheim but also foods like burgers
+                and soups.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.thepizzapress.com/"
+                target="_blank"
+                >The Pizza Press</a
+              >
+              <p class="city__content__section__place__description">
+                Build your very own pizza in at Anaheim's most recognized pizza
+                spot "The Pizza Press".
+              </p>
+            </div>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO SHOP
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="http://shopanaheimplaza.com/"
+                target="_blank"
+                >Anaheim Plaza</a
+              >
+              <p class="city__content__section__place__description">
+                9 levels of over 170 shops and restaurants, there isn't anything
+                that you can't find at the Westfield San Francisco Centre.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.anaheimtownsquare.com/"
+                target="_blank"
+                >Anaheim Town Square</a
+              >
+              <p class="city__content__section__place__description">
+                Anaheim Town Square offers a great selection of shops,
+                restaurants, and gyms including Gamestop, Chipotle, KFC, Ross,
+                and much more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer__group">
@@ -192,7 +268,6 @@
         </div>
       </div>
     </div>
-  </div>
 
     <!-- Sign In Modal -->
     <div class="modal-container" id="signInModal">
@@ -232,7 +307,6 @@
         </div>
       </div>
     </div>
-
     <script src="modal.js"></script>
   </body>
 </html>

@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/07e3f1840c.js"
       crossorigin="anonymous"
     ></script>
-    <title>Contact Us</title>
+    <title>Viaje</title>
   </head>
   <body>
     <header class="header">
@@ -65,46 +65,125 @@
       </div>
     </header>
 
-    <main>
-      <div class="container">
-      <div class="contact">
-      <div class="contact__head">
-        <h1 class="contact__head__heading">Get in touch</h1>
-        <p class="contact__head__note">
-          Don't see your city? Have any additional comments? Questions? Send us
-          an email!
-        </p>
-      </div>
+    <div class="container">
+      <div class="city">
+        <img class="city__img" src="img/San_Jose_Image.jpg" alt="San Jose" />
 
-      <form class="contact__form">
-        <input
-          class="contact__form__item"
-          type="text"
-          name="firstName"
-          placeholder="First Name"
-        />
-        <input
-          class="contact__form__item"
-          type="text"
-          name="lastName"
-          placeholder="Last Name"
-        />
-        <input
-          class="contact__form__item"
-          type="email"
-          name="email"
-          placeholder="What's your email?"
-        />
-        <textarea
-          class="contact__form__item contact__form__description"
-          name="description"
-          cols="30"
-          rows="10"
-          placeholder="Description"
-        ></textarea>
-        <input class="submit" type="submit" name="submit" />
-      </form>
-    </main>
+        <div class="city__content">
+          <div class="city__content__description">
+            <h2 class="city__content__description__name">San Jose</h2>
+            <p class="city__content__description__about">
+              Nicknamed the capital of Silicon Valley, San Jose is a diverse
+              area with an innovative spirit. While it has a distinct downtown,
+              San Jose is a sprawling metro area that is as much defined by its
+              suburban neighborhoods and large tech campuses as it is by the
+              high-rises in its business district.
+            </p>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO GO
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://winchestermysteryhouse.com/"
+                target="_blank"
+                >Winchester Mystery Museum</a
+              >
+              <p class="city__content__section__place__description">
+                Once the home to Sarah Winchester, the widow of firearm magnate
+                William Wirt Winchester, experience one of the most mysteriously
+                haunted places in the United States!
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline underline"
+                href="https://www.thetech.org/"
+                target="_blank"
+                >The Tech Interactive</a
+              >
+              <p class="city__content__section__place__description">
+                The Tech Interactive is a science and technology center located
+                in downtown San Jose. How can you visit Silicon Valley and not
+                discover the many technologies that this place has to offer!
+              </p>
+            </div>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO EAT
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://theboilingcrab.com/locations/curtner/"
+                target="_blank"
+                >The Boiling Crab</a
+              >
+              <p class="city__content__section__place__description">
+                One of the greatest seafood spots in all of California, The
+                Boiling Crab offers anything seafood like shrimp, king crab,
+                clams, and even chicken nuggets.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="http://www.pizzaantica.com/"
+                target="_blank"
+                >Pizza Antica</a
+              >
+              <p class="city__content__section__place__description">
+                Check out one of the best traditional pizza spots in San Jose,
+                Pizza Antica offers foods served with the outmost top-quality
+                ingredients.
+              </p>
+            </div>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO SHOP
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="http://www.santanarow.com/"
+                target="_blank"
+                >Santana Row</a
+              >
+              <p class="city__content__section__place__description">
+                Santana Row is Silicon Valley's premiere destination for
+                shopping, dining, living, and much more. Take a look at over 70
+                shops, 20 restaurants, and 9 spas and salons.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.westfield.com/valleyfair"
+                target="_blank"
+                >Westfield Valley Fair</a
+              >
+              <p class="city__content__section__place__description">
+                With over 273 shops and restaurants, there isn't anything that
+                you can't find at the Westfield Valley Fair shopping mall.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer__group">
@@ -192,7 +271,6 @@
         </div>
       </div>
     </div>
-  </div>
 
     <!-- Sign In Modal -->
     <div class="modal-container" id="signInModal">
@@ -232,7 +310,6 @@
         </div>
       </div>
     </div>
-
     <script src="modal.js"></script>
   </body>
 </html>

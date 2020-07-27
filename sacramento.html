@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/07e3f1840c.js"
       crossorigin="anonymous"
     ></script>
-    <title>Contact Us</title>
+    <title>Viaje</title>
   </head>
   <body>
     <header class="header">
@@ -65,46 +65,125 @@
       </div>
     </header>
 
-    <main>
-      <div class="container">
-      <div class="contact">
-      <div class="contact__head">
-        <h1 class="contact__head__heading">Get in touch</h1>
-        <p class="contact__head__note">
-          Don't see your city? Have any additional comments? Questions? Send us
-          an email!
-        </p>
-      </div>
+    <div class="container">
+      <div class="city">
+        <img class="city__img" src="img/Sacramento_Img.jpg" alt="Sacramento" />
 
-      <form class="contact__form">
-        <input
-          class="contact__form__item"
-          type="text"
-          name="firstName"
-          placeholder="First Name"
-        />
-        <input
-          class="contact__form__item"
-          type="text"
-          name="lastName"
-          placeholder="Last Name"
-        />
-        <input
-          class="contact__form__item"
-          type="email"
-          name="email"
-          placeholder="What's your email?"
-        />
-        <textarea
-          class="contact__form__item contact__form__description"
-          name="description"
-          cols="30"
-          rows="10"
-          placeholder="Description"
-        ></textarea>
-        <input class="submit" type="submit" name="submit" />
-      </form>
-    </main>
+        <div class="city__content">
+          <div class="city__content__description">
+            <h2 class="city__content__description__name">Sacramento</h2>
+            <p class="city__content__description__about">
+              Sacramento is the capital of California and the 5th largest city
+              in the state. It is located in north/central California,
+              approximately an hour and a half northeast of Oakland and San
+              Francisco. There are so many things to do in the city of trees!
+            </p>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO GO
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.oldsacramento.com/"
+                target="_blank"
+                >Old Sacramento</a
+              >
+              <p class="city__content__section__place__description">
+                A riverfront historic district with over 125 shopping, dining,
+                events, and attractions, there is no other destination quite
+                like the Old Sacramento Waterfront.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline underline"
+                href="https://capitolmuseum.ca.gov/"
+                target="_blank"
+                >California State Capitol Museum</a
+              >
+              <p class="city__content__section__place__description">
+                Home to the government of the U.S state of California, the
+                California State Capitol building also serves as a museum.
+                Experience California's rich history and witness the making of
+                history through the modern lawmaking process.
+              </p>
+            </div>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO EAT
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="http://www.weheartfriedchicken.com/"
+                target="_blank"
+                >South</a
+              >
+              <p class="city__content__section__place__description">
+                It's pretty hard not to hear about one of Sacramento's greatest
+                burger spots, South offers anything from chicken to
+                sandwiches/burgers.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://theboilingcrab.com/"
+                target="_blank"
+                >The Boiling Crab</a
+              >
+              <p class="city__content__section__place__description">
+                One of the greatest seafood spots in all of California, The
+                Boiling Crab offers anything seafood like shrimp, king crab,
+                clams, and even chicken nuggets.
+              </p>
+            </div>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO SHOP
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.ardenfair.com/"
+                target="_blank"
+                >Arden Fair</a
+              >
+              <p class="city__content__section__place__description">
+                Arden Fair is the largest shopping mall in Sacramento, with over
+                165 stores including Disney, Apple, Macy's, and many more.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.docosacramento.com/"
+                target="_blank"
+                >DOCO (Downtown Commons)</a
+              >
+              <p class="city__content__section__place__description">
+                DOCO is where the tourists and locals like to hang out, a two
+                story mixed-use enterntainment and shopping complex, with many
+                retailers and restaurants to choose from.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer__group">
@@ -192,7 +271,6 @@
         </div>
       </div>
     </div>
-  </div>
 
     <!-- Sign In Modal -->
     <div class="modal-container" id="signInModal">
@@ -232,7 +310,6 @@
         </div>
       </div>
     </div>
-
     <script src="modal.js"></script>
   </body>
 </html>

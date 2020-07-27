@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/07e3f1840c.js"
       crossorigin="anonymous"
     ></script>
-    <title>Contact Us</title>
+    <title>Viaje</title>
   </head>
   <body>
     <header class="header">
@@ -65,46 +65,129 @@
       </div>
     </header>
 
-    <main>
-      <div class="container">
-      <div class="contact">
-      <div class="contact__head">
-        <h1 class="contact__head__heading">Get in touch</h1>
-        <p class="contact__head__note">
-          Don't see your city? Have any additional comments? Questions? Send us
-          an email!
-        </p>
-      </div>
+    <div class="container">
+      <div class="city">
+        <img
+          class="city__img"
+          src="img/Santa_Monica_Img.jpg"
+          alt="Santa Monica"
+        />
 
-      <form class="contact__form">
-        <input
-          class="contact__form__item"
-          type="text"
-          name="firstName"
-          placeholder="First Name"
-        />
-        <input
-          class="contact__form__item"
-          type="text"
-          name="lastName"
-          placeholder="Last Name"
-        />
-        <input
-          class="contact__form__item"
-          type="email"
-          name="email"
-          placeholder="What's your email?"
-        />
-        <textarea
-          class="contact__form__item contact__form__description"
-          name="description"
-          cols="30"
-          rows="10"
-          placeholder="Description"
-        ></textarea>
-        <input class="submit" type="submit" name="submit" />
-      </form>
-    </main>
+        <div class="city__content">
+          <div class="city__content__description">
+            <h2 class="city__content__description__name">Santa Monica</h2>
+            <p class="city__content__description__about">
+              Santa Monica is an acclaimed beach city that is close to many
+              other Los Angeles attractions. The Santa Monica Beach alone is the
+              reason why many choose to visit Santa Monica, offering some of the
+              best sunsets on the West Coast.
+            </p>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO GO
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.santamonicapier.org/fun"
+                target="_blank"
+                >Santa Monica Pier</a
+              >
+              <p class="city__content__section__place__description">
+                Looking to spend some time with the family at an amusement park?
+                Explore an aquarium? Or even do some fishing? The Santa Monica
+                Pier should be at the top of anyone's list of things to do when
+                in Santa Monica.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline underline"
+                href="https://www.santamonica.com/things-to-do/santa-monica-beach/"
+                target="_blank"
+                >Santa Monica Beach</a
+              >
+              <p class="city__content__section__place__description">
+                Enjoy a beautiful time with the family at the Santa Monica
+                beach. Why only swim when you can enjoy many other activities
+                like seaside chess or taking a ride on the bike trail!
+              </p>
+            </div>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO EAT
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.birdiegsla.com/"
+                target="_blank"
+                >Birdie G's</a
+              >
+              <p class="city__content__section__place__description">
+                Want a taste of some delicious cocktails or soup? Birdie G's has
+                just what you're looking for, serving the best in one of the
+                most beautifully designed restaurants in Santa Monica.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.umamiburger.com/"
+                target="_blank"
+                >Umami Burger</a
+              >
+              <p class="city__content__section__place__description">
+                Simply looking for the best burgers in town? Umami Burger has a
+                strong reputation of serving the best food not only in Santa
+                Monica, but also in other cities like New York City and Chicago.
+              </p>
+            </div>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO SHOP
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.mainstreetsm.com/"
+                target="_blank"
+                >Main Street</a
+              >
+              <p class="city__content__section__place__description">
+                Looking to spend your time browsing through the many
+                never-ending local independent shops of Santa Monica? Not only
+                can you shop, but you can also grab a bite, do some arts &
+                crafts, and work on that summer body you've always wanted.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.santamonicaplace.com/"
+                target="_blank"
+                >Santa Monica Place</a
+              >
+              <p class="city__content__section__place__description">
+                href="https://www.santamonicaplace.com/"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer__group">
@@ -192,7 +275,6 @@
         </div>
       </div>
     </div>
-  </div>
 
     <!-- Sign In Modal -->
     <div class="modal-container" id="signInModal">
@@ -232,7 +314,6 @@
         </div>
       </div>
     </div>
-
     <script src="modal.js"></script>
   </body>
 </html>

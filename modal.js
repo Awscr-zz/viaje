@@ -1,12 +1,16 @@
 //// Modal
-const signUpBtn = document.querySelector('#signUp');
-const signInBtn = document.querySelector('#signIn');
+const signUpBtns = document.querySelectorAll('#signUp');
+const signInBtns = document.querySelectorAll('#signIn');
 const closeBtns = document.querySelectorAll('#close');
 const signUpModal = document.querySelector('#signUpModal');
 const signInModal = document.querySelector('#signInModal');
 
 // Show Sign Up Modal
-signUpBtn.addEventListener('click', () => {
+signUpBtns[0].addEventListener('click', () => {
+  signUpModal.classList.add('show-modal');
+});
+
+signUpBtns[1].addEventListener('click', () => {
   signUpModal.classList.add('show-modal');
 });
 
@@ -20,7 +24,11 @@ closeBtns[1].addEventListener('click', () => {
 });
 
 // Show Sign In Modal
-signIn.addEventListener('click', () => {
+signInBtns[0].addEventListener('click', () => {
+  signInModal.classList.add('show-modal');
+});
+
+signInBtns[1].addEventListener('click', () => {
   signInModal.classList.add('show-modal');
 });
 
@@ -29,5 +37,4 @@ window.addEventListener('click', (e) => {
   e.target === signUpModal || signInModal
     ? e.target.classList.remove('show-modal')
     : false;
-  console.log(e.target);
 });

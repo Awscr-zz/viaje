@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/07e3f1840c.js"
       crossorigin="anonymous"
     ></script>
-    <title>Contact Us</title>
+    <title>Viaje</title>
   </head>
   <body>
     <header class="header">
@@ -65,46 +65,130 @@
       </div>
     </header>
 
-    <main>
-      <div class="container">
-      <div class="contact">
-      <div class="contact__head">
-        <h1 class="contact__head__heading">Get in touch</h1>
-        <p class="contact__head__note">
-          Don't see your city? Have any additional comments? Questions? Send us
-          an email!
-        </p>
-      </div>
+    <div class="container">
+      <div class="city">
+        <img
+          class="city__img"
+          src="img/San_Francisco_Img.jpg"
+          alt="San Francisco"
+        />
 
-      <form class="contact__form">
-        <input
-          class="contact__form__item"
-          type="text"
-          name="firstName"
-          placeholder="First Name"
-        />
-        <input
-          class="contact__form__item"
-          type="text"
-          name="lastName"
-          placeholder="Last Name"
-        />
-        <input
-          class="contact__form__item"
-          type="email"
-          name="email"
-          placeholder="What's your email?"
-        />
-        <textarea
-          class="contact__form__item contact__form__description"
-          name="description"
-          cols="30"
-          rows="10"
-          placeholder="Description"
-        ></textarea>
-        <input class="submit" type="submit" name="submit" />
-      </form>
-    </main>
+        <div class="city__content">
+          <div class="city__content__description">
+            <h2 class="city__content__description__name">San Francisco</h2>
+            <p class="city__content__description__about">
+              San Francisco is often called "Everybody’s Favorite City," a title
+              earned by its impressive scenery, cultural attractions, diversity,
+              and world-class cuisine. San Francisco is filled with some of the
+              best landmarks in the world like the Golden Gate Bridge and
+              Alcatraz.
+            </p>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO GO
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.pier39.com/"
+                target="_blank"
+                >Pier 39</a
+              >
+              <p class="city__content__section__place__description">
+                A popular tourist attraction consisting of restaurants, rides,
+                street performances, shops, and much more! Pier 39 should be at
+                the top of your list of places to visit when in San Francisco.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline underline"
+                href="https://www.nps.gov/alca/index.htm"
+                target="_blank"
+                >Alcatraz Island</a
+              >
+              <p class="city__content__section__place__description">
+                An offshore island that was originally a federal prison to some
+                of the most dangerous prisoners in the United States. Take a
+                ferry ride to the island day or night and explore the island at
+                your own pace.
+              </p>
+            </div>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO EAT
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.superduperburgers.com/"
+                target="_blank"
+                >Super Duper Burgers</a
+              >
+              <p class="city__content__section__place__description">
+                Looking for the best burgers in the city? The name brings on
+                exactly what it says, taste anything from their "Ground Daily
+                Natural Vegetarian" burgers to their "Chipotle Aioli" chicken
+                sandwiches.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.pearl6101.com/"
+                target="_blank"
+                >Pearl 6101</a
+              >
+              <p class="city__content__section__place__description">
+                The best Mediterranean-inspired food that you can find in San
+                Francisco, Pearl 16101 offers anything from seafood like their
+                specialty cocktails to pasta like their "Ricotta Ravioli".
+              </p>
+            </div>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO SHOP
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.westfield.com/sanfrancisco"
+                target="_blank"
+                >Westfield San Francisco Centre</a
+              >
+              <p class="city__content__section__place__description">
+                9 levels of over 170 shops and restaurants, there isn't anything
+                that you can't find at the Westfield San Francisco Centre.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://unionsquareshop.com/"
+                target="_blank"
+                >Union Square</a
+              >
+              <p class="city__content__section__place__description">
+                A plaza located in downtown San Francisco, Union Square offers
+                anything shopping, dining, and travel related.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer__group">
@@ -192,7 +276,6 @@
         </div>
       </div>
     </div>
-  </div>
 
     <!-- Sign In Modal -->
     <div class="modal-container" id="signInModal">
@@ -232,7 +315,6 @@
         </div>
       </div>
     </div>
-
     <script src="modal.js"></script>
   </body>
 </html>

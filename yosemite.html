@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/07e3f1840c.js"
       crossorigin="anonymous"
     ></script>
-    <title>Contact Us</title>
+    <title>Viaje</title>
   </head>
   <body>
     <header class="header">
@@ -65,46 +65,128 @@
       </div>
     </header>
 
-    <main>
-      <div class="container">
-      <div class="contact">
-      <div class="contact__head">
-        <h1 class="contact__head__heading">Get in touch</h1>
-        <p class="contact__head__note">
-          Don't see your city? Have any additional comments? Questions? Send us
-          an email!
-        </p>
-      </div>
+    <div class="container">
+      <div class="city">
+        <img class="city__img" src="img/Yosemite_Img.jpg" alt="Yosemite" />
 
-      <form class="contact__form">
-        <input
-          class="contact__form__item"
-          type="text"
-          name="firstName"
-          placeholder="First Name"
-        />
-        <input
-          class="contact__form__item"
-          type="text"
-          name="lastName"
-          placeholder="Last Name"
-        />
-        <input
-          class="contact__form__item"
-          type="email"
-          name="email"
-          placeholder="What's your email?"
-        />
-        <textarea
-          class="contact__form__item contact__form__description"
-          name="description"
-          cols="30"
-          rows="10"
-          placeholder="Description"
-        ></textarea>
-        <input class="submit" type="submit" name="submit" />
-      </form>
-    </main>
+        <div class="city__content">
+          <div class="city__content__description">
+            <h2 class="city__content__description__name">Yosemite</h2>
+            <p class="city__content__description__about">
+              Yosemite National Park lies in the heart of California. With its
+              'hanging' valleys, many waterfalls, cirque lakes, polished domes,
+              moraines and U-shaped valleys, it provides an excellent overview
+              of all kinds of granite relief fashioned by glaciation
+            </p>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO GO
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.nps.gov/yose/planyourvisit/halfdome.htm"
+                target="_blank"
+                >Half Dome</a
+              >
+              <p class="city__content__section__place__description">
+                Looking to take on the ultimate hike? Or just want to get some
+                steps in? Half Dome is known as the prominent point of Yosemite,
+                nearly 5,000 feet above the Yosemite Valley and 8,800 feet above
+                sea level.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline underline"
+                href="https://www.nps.gov/yose/planyourvisit/waterfalls.htm"
+                target="_blank"
+                >Yosemite Falls</a
+              >
+              <p class="city__content__section__place__description">
+                Yosemite Falls is the highest waterfall in all of Yosemite, with
+                a total height of 2,424 feet! Experience the breathtaking
+                scenery at one of Yosemite's most visited spots!
+              </p>
+            </div>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO EAT
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.travelyosemite.com/dining/the-ahwahnee-dining-room/"
+                target="_blank"
+                >The Ahwahnee Dining Room</a
+              >
+              <p class="city__content__section__place__description">
+                The Ahwahnee Dining Room is an award-winning restaurant that is
+                both magnificent and intimate. There are a great number of food
+                selections to choose from developed by the hotel's executive
+                chef based on traditional American cuisine.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.yosemite.com/restaurants-dining/mountain-room-restaurant-2/"
+                target="_blank"
+                >The Mountain Room</a
+              >
+              <p class="city__content__section__place__description">
+                The Mountain Room is not your average wine and dine, serving
+                numerous dishes including sizzling steaks, fresh seafood,
+                pastas, and much more. The restaurant not only serves some of
+                the best food in Yosemite, but also has an amazing view of
+                Yosemite Falls!
+              </p>
+            </div>
+          </div>
+
+          <div class="city__content__section">
+            <h2>
+              WHERE TO SHOP
+            </h2>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.yelp.com/biz/yosemite-mountain-shop-yosemite-national-park"
+                target="_blank"
+                >Mountain Shop</a
+              >
+              <p class="city__content__section__place__description">
+                Need to purchase some hiking gear? The Mountain Shop is the
+                place to go if you forgot your hiking shoes, or your husband
+                forgot to pack your favorite jacket.
+              </p>
+            </div>
+
+            <div class="city__content__section__place">
+              <a
+                class="city__content__section__place__link underline"
+                href="https://www.travelyosemite.com/things-to-do/shopping-supplies-groceries/"
+                target="_blank"
+                >Valley Lodge Gift Shop</a
+              >
+              <p class="city__content__section__place__description">
+                Promised to bring back your sister a souvenir? The Valley Lodge
+                Gift Shop is the place for all things gift related!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer__group">
@@ -192,7 +274,6 @@
         </div>
       </div>
     </div>
-  </div>
 
     <!-- Sign In Modal -->
     <div class="modal-container" id="signInModal">
@@ -232,7 +313,6 @@
         </div>
       </div>
     </div>
-
     <script src="modal.js"></script>
   </body>
 </html>
