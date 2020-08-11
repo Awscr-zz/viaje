@@ -305,6 +305,8 @@ body {
   .modal__content {
     padding: 2rem;
     font-size: 1.6rem; }
+    .modal__content input {
+      -webkit-appearance: none; }
     .modal__content__form div {
       margin: 1.5rem; }
     .modal__content__form label {
