@@ -317,13 +317,14 @@ body {
       padding: 0.8rem;
       width: 100%;
       border: 0.1rem solid #333;
-      border-radius: 2rem; }
+      border-radius: 0.2rem; }
       .modal__content__form .form-input:focus::-webkit-input-placeholder {
         color: #2471a3; }
     .modal__content__form__sign {
       background-color: #fff;
       width: 100%;
       border: 0.1rem solid #2471a3;
+      border-radius: 0.3rem;
       color: #2471a3;
       cursor: pointer;
       padding: 0.8rem 1.2rem; }
@@ -342,6 +343,7 @@ body {
     width: 30rem; } }
 
 .showcase {
+  margin-top: 5rem;
   background-color: #000;
   overflow: hidden; }
   .showcase__carousel {
@@ -499,10 +501,10 @@ body {
     .cities__form__search {
       outline: none;
       height: 3rem;
-      width: 50%;
+      width: 80%;
       padding-left: 1rem;
       border: 0.1rem solid #333;
-      border-radius: 2rem; }
+      border-radius: 0.3rem; }
       .cities__form__search:focus {
         border: 0.1rem solid #2471a3; }
   .cities__row {
@@ -592,14 +594,14 @@ body {
       margin-bottom: 1.5rem;
       padding-left: 1.5rem;
       border: 0.1rem solid #333;
-      border-radius: 2rem; }
+      border-radius: 0.3rem; }
       .contact__form__item:focus::-webkit-input-placeholder {
         color: #2471a3; }
     .contact__form__description {
       resize: none;
       height: 14rem;
       padding-top: 1rem;
-      border-radius: 1rem; }
+      border-radius: 0.3rem; }
 
 @media screen and (max-width: 768px) {
   .contact__head__heading {
