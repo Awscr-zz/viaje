@@ -58,7 +58,7 @@ prev.addEventListener('click', (e) => {
 });
 
 //// Search Filter
-const citiesSearch = document.querySelector('.cities__form__search');
+const citiesSearch = document.querySelector('#search');
 const cityCards = document.querySelectorAll('.cities__row__card');
 
 citiesSearch.addEventListener('keyup', (e) => {
