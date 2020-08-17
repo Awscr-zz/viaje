@@ -45,7 +45,8 @@ body {
   background-color: #fff;
   color: #000;
   border: 0.1rem solid #2471a3;
-  border-radius: 2.2rem; }
+  border-radius: 2.2rem;
+  -webkit-appearance: none; }
   .submit:hover {
     color: #fff;
     background-color: #2471a3; }
